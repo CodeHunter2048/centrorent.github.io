@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>centrorent.com</title>
+    <link rel="shortcut icon" type="image/x-icon" href="Logo/centrorentlogo.ico">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+            $('a[data-content]').click(function() {
+                $('.content').removeClass('active');
+                $('#' + $(this).attr('data-content')).addClass('active');
+            });
+
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+            <img src="Logo/centrorentlogo.png" alt="logopic" class="logopic">
+        
+        <nav>
+            <ul>
+                <li><a href="#home" data-content="home">HOME</a></li>
+                <li><a href="#services" data-content="services">SERVICES</a></li>
+                <li><a href="#about" data-content="about">ABOUT US</a></li>
+                <li><a href="#contact" data-content="contact">CONTACT US</a></li>
+                <li><a href="#media" data-content="media">MEDIA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <div id="home" class=" content active">
+          
+          <div class="search-container">
+            <form action="/search" method="get">
+              <input type="text" name="q" placeholder="Search...">
+              <button type="submit">Search</button>
+            </form>
+          </div>
+
+            <section id="banner">
+                <section id="categories">
+                    <div class="category">
+                      <h3>Agricultural</h3>
+                      <ul>
+                        <li>
+                            <div class="prodDiv">
+                              <img class="products" src="agrosolve/agro1.jpeg" alt="Agricultural Equipment 1">
+                            </div>
+                          <div class="details">
+                            <h4>Tractor Cultivator</h4>
+                            <p>Provider: Agrosolve</p>
+                            <p class="price">Daily: &#8369;257 | Weekly: &#8369;1028 | Monthly: &#8369;1928</p>
+                            <a href="#" class="reviews-link">Reviews</a>
+                            <button class="rent-btn" id="rent-btn" onclick="rentForm()">Rent</button>
+                          </div>
+                        </li>
+                        <li>
+                            <div class="prodDiv"><img class="products" src="agrosolve/agro2.jpeg" alt="Agricultural Equipment 1"></div>
+                          <div class="details">
+                            <h4>Combine Harvester</h4>
+                            <p>Provider: Agrosolve</p>
+                            <p class="price">Daily: &#8369;30000 | Weekly: &#8369;120000 | Monthly: &#8369;225000</p>
+                            <a href="#" class="reviews-link">Reviews</a>
+                            <button class="rent-btn" id="rent-btn" onclick="rentForm()">Rent</button>
+                          </div>
+                        </li>
+                        <li>
+                            <div class="prodDiv"><img class="products" src="agrosolve/agro3.jpeg" alt="Agricultural Equipment 1"></div>
+                          <div class="details">
+                            <h4>Tractor</h4>
+                            <p>Provider: Agrosolve</p>
+                            <p class="price">Daily: &#8369;35800 | Weekly: &#8369;143200 | Monthly: &#8369;268500</p>
+                            <a href="#" class="reviews-link">Reviews</a>
+                            <button class="rent-btn" id="rent-btn" onclick="rentForm()">Rent</button>
+                          </div>
+                        </li>
+                        <li>
+                            <div class="prodDiv"><img class="products" src="agrosolve/agro4.jpeg" alt="Agricultural Equipment 1"></div>
+                          <div class="details">
+                            <h4>Harrow (tool)</h4>
+                            <p>Provider: Agrosolve</p>
+                            <p class="price">Daily: &#8369;2400 | Weekly: &#8369;9600 | Monthly: &#8369;18000</p>
+                            <a href="#" class="reviews-link">Reviews</a>
+                            <button class="rent-btn" id="rent-btn" onclick="rentForm()">Rent</button>
+                          </div>
+                        </li>
+                        <li>
+                            <div class="prodDiv"><img class="products" src="agrosolve/agro5.jpeg" alt="Agricultural Equipment 1"></div>
+                          <div class="details">
+                            <h4>Sprayer</h4>
+                            <p>Provider: Agrosolve</p>
+                            <p class="price">Daily: &#8369;190 | Weekly: &#8369;760 | Monthly: &#8369;1425</p>
+                            <a href="#" class="reviews-link">Reviews</a>
+                            <button class="rent-btn" id="rent-btn" onclick="rentForm()">Rent</button>
+                          </div>
+                        </li>
+                        <li>
+                            <div class="prodDiv"><img class="products" src="agrosolve/agro6.jpeg" alt="Agricultural Equipment 1"></div>
+                          <div class="details">
+                            <h4>Transplanter</h4>
+                            <p>Provider: Agrosolve</p>
+                            <p class="price">Daily: &#8369;8828 | Weekly: &#8369;35312 | Monthly: &#8369;66210</p>
+                            <a href="#" class="reviews-link">Reviews</a>
+                            <button class="rent-btn" id="rent-btn" onclick="rentForm()">Rent</button>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="category">
+                      <h3>Construction</h3>
+                      <ul>
+                        <li>
+                            <div class="prodDiv"><img class="products" src="renstruct/construction1.jpeg" alt="Construction Equipment 1"></div>
+                          <div class="details">
+                            <h4>Excavator</h4>
+                            <p>Provider: Renstruct</p>
+                            <p class="price">Daily: &#8369;4474 | Weekly: &#8369;17896 | Monthly: &#8369;33555</p>
+                            <a href="#" class="reviews-link">Reviews</a>
+                            <button class="rent-btn" id="rent-btn" onclick="rentForm()">Rent</button>
+                          </div>
+                        </li>
+                        <li>
+                            <div class="prodDiv"><img class="products" src="renstruct/construction2.jpeg" alt="Construction Equipment 2"></div>
+                          <div class="details">
+                            <h4>Bulldozer</h4>
+                            <p>Provider: Renstruct</p>
+                            <p class="price">Daily: &#8369;26066 | Weekly: &#8369;104264 | Monthly: &#8369;1954965</p>
+                            <a href="#" class="reviews-link">Reviews</a>
+                            <button class="rent-btn" id="rent-btn" onclick="rentForm()">Rent</button>
+                          </div>
+                        </li>
+                        <li>
+                            <div class="prodDiv"><img class="products" src="renstruct/construction3.jpeg" alt="Construction Equipment 3"></div>
+                          <div class="details">
+                            <h4>Loader</h4>
+                            <p>Provider: Renstruct</p>
+                            <p class="price">Daily: &#8369;23829 | Weekly: &#8369;95316 | Monthly: &#8369;178718</p>
+                            <a href="#" class="reviews-link">Reviews</a>
+                            <button class="rent-btn" id="rent-btn" onclick="rentForm()">Rent</button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="prodDiv"><img class="products" src="renstruct/construction4.jpeg" alt="Construction Equipment 1"></div>
+                        <div class="details">
+                          <h4>Compactor</h4>
+                          <p>Provider: Renstruct</p>
+                          <p class="price">Daily: &#8369;4788 | Weekly: &#8369;19152 | Monthly: &#8369;35910</p>
+                          <a href="#" class="reviews-link">Reviews</a>
+                            <button class="rent-btn" id="rent-btn" onclick="rentForm()">Rent</button>
+                        </div>
+                      </li>
+                      <li>
+                          <div class="prodDiv"><img class="products" src="renstruct/construction5.jpeg" alt="Construction Equipment 2"></div>
+                        <div class="details">
+                          <h4>Grader</h4>
+                          <p>Provider: Renstruct</p>
+                          <p class="price">Daily: &#8369;36359 | Weekly: &#8369;145436 | Monthly: &#8369;272693</p>
+                          <a href="#" class="reviews-link">Reviews</a>
+                            <button class="rent-btn" id="rent-btn" onclick="rentForm()">Rent</button>
+                        </div>
+                      </li>
+                      <li>
+                          <div class="prodDiv"><img class="products" src="renstruct/construction6.jpeg" alt="Construction Equipment 3"></div>
+                        <div class="details">
+                          <h4>Concrete Mixer</h4>
+                          <p>Provider: Renstruct</p>
+                          <p class="price">Daily: &#8369;660 | Weekly: &#8369;2640 | Monthly: &#8369;4950</p>
+                          <a href="#" class="reviews-link">Reviews</a>
+                            <button class="rent-btn" id="rent-btn" onclick="rentForm()">Rent</button>
+                        </div>
+                      </li>
+                      </ul>
+                    </div>
+                    <div class="category">
+                    <h3>Automotive</h3>
+                      <ul>
+                        <li>
+                            <div class="prodDiv">
+                              <img class="products" src="Autoquip/automotive1.jpeg" alt="Automotive Equipment 1">
+                            </div>
+                          <div class="details">
+                            <h4>Air Compressor</h4>
+                            <p>Provider: Autoquip</p>
+                            <p class="price">Daily: &#8369;347 | Weekly: &#8369;1388 | Monthly: &#8369;2603</p>
+                            <a href="#" class="reviews-link">Reviews</a>
+                            <button class="rent-btn" id="rent-btn" onclick="rentForm()">Rent</button>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                          <img class="products" src="Autoquip/automotive2.jpeg" alt="Automotive Equipment 1">
+                        </div>
+                      <div class="details">
+                        <h4>Jack Stands</h4>
+                        <p>Provider: Autoquip</p>
+                            <p class="price">Daily: &#8369;157 | Weekly: &#8369;628 | Monthly: &#8369;1178</p>
+                            <a href="#" class="reviews-link">Reviews</a>
+                            <button class="rent-btn" id="rent-btn" onclick="rentForm()">Rent</button>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                          <img class="products" src="Autoquip/automotive3.jpeg" alt="Automotive Equipment 1">
+                        </div>
+                      <div class="details">
+                        <h4>Oil Drains</h4>
+                        <p>Provider: Autoquip</p>
+                            <p class="price">Daily: &#8369;126 | Weekly: &#8369;504 | Monthly: &#8369;945</p>
+                            <a href="#" class="reviews-link">Reviews</a>
+                            <button class="rent-btn" id="rent-btn" onclick="rentForm()">Rent</button>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                          <img class="products" src="Autoquip/automotive4.jpeg" alt="Automotive Equipment 1">
+                        </div>
+                      <div class="details">
+                        <h4>Battery Charger</h4>
+                        <p>Provider: Autoquip</p>
+                            <p class="price">Daily: &#8369;104 | Weekly: &#8369;416 | Monthly: &#8369;780</p>
+                            <a href="#" class="reviews-link">Reviews</a>
+                            <button class="rent-btn" id="rent-btn" onclick="rentForm()">Rent</button>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                          <img class="products" src="Autoquip/automotive5.jpeg" alt="Automotive Equipment 1">
+                        </div>
+                      <div class="details">
+                        <h4>Tractor Cultivator</h4>
+                        <p>Provider: Autoquip</p>
+                            <p class="price">Daily: &#8369;8707 | Weekly: &#8369;34828 | Monthly: &#8369;65303</p>
+                            <a href="#" class="reviews-link">Reviews</a>
+                            <button class="rent-btn" id="rent-btn" onclick="rentForm()">Rent</button>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                          <img class="products" src="Autoquip/automotive6.jpeg" alt="Automotive Equipment 1">
+                        </div>
+                      <div class="details">
+                        <h4>Tractor Cultivator</h4>
+                        <p>Provider: Autoquip</p>
+                            <p class="price">Daily: &#8369;1034 | Weekly: &#8369;4136 | Monthly: &#8369;7755</p>
+                            <a href="#" class="reviews-link">Reviews</a>
+                            <button class="rent-btn" id="rent-btn" onclick="rentForm()">Rent</button>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+    
+      </div>
+
+        <div id="services" class="content">
+            <h1>At Centrorent, we make sure to put you first!</h1>
+            <ul>
+              <li>We make sure that you can easily find the equipment you're
+                looking for, with fair and reasonable prices for rentals (no hidden fees or charges).
+              </li>
+              <li>
+                We offer multiple channels for customer support.
+              </li>
+              <li>We offer loyalty programs.</li>
+              <li>We solicit feedback and reviews.</li>
+              <li>We will keep you informed and up-to-date through communication.</li>
+              <li>We ensure a seamless and hassle-free rental experience for everyone.</li>
+            </ul>
+        </div>
+
+        <div id="about" class="content">
+          <img class="aboutUs" src="AboutUs/1.png" alt="About us 1">
+          <img class="aboutUs" src="AboutUs/2.png" alt="About us 2">
+        </div>
+
+
+        <div id="contact" class="content">
+            <h1>Get in touch with us.</h1>
+            <div id="contactInfo">
+            <p><b>Phone Number: </b>+639636340404</p>
+            <p><b>Telephone Number: </b>047-237 3638</p>
+            <p><b>Email Address: </b>contact@centrorent.com</p>
+            </div>
+        </div>
+
+        
+        <div id="media" class="content">
+            <h1>See our latest media coverage.</h1>
+            <p></p>
+        </div>
+    </main>
+
+    <div id="overlay" class="hidden"></div>
+
+<span id="span-rent-form" class="hidden">
+  <section id="rent-form">
+    <h2>Rent Equipment</h2>
+    <form>
+      <label for="equipment-name">Name:</label>
+      <input type="text" id="equipment-name" name="equipment-name" required><br>
+      <label for="rental-duration">Rental Duration:</label>
+      <select id="rental-duration" name="rental-duration">
+        <option value="daily">Daily</option>
+        <option value="weekly">Weekly</option>
+        <option value="monthly">Monthly</option>
+      </select><br>
+      <label for="pickup-date">Pickup Date:</label>
+      <input type="date" id="pickup-date" name="pickup-date" required><br>
+      <label for="return-date">Return Date:</label>
+      <input type="date" id="return-date" name="return-date" required><br>
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required><br>
+      <label for="contact-info">Contact Information:</label><br>
+      <textarea id="contact-info" name="contact-info" required></textarea><br>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </section>
+</span>        
+
+<script>
+  function rentForm() {
+    document.getElementById("span-rent-form").classList.remove("hidden");
+    document.getElementById("overlay").classList.remove("hidden");
+  }
+  
+  document.getElementById("rent-btn").addEventListener("click", function(event) {
+      event.stopPropagation();
+  });
+  
+  document.addEventListener("click", function(event) {
+      var rentForm = document.getElementById("rent-form");
+      if (event.target != rentForm && !rentForm.contains(event.target)) {
+          document.getElementById("span-rent-form").classList.add("hidden");
+          document.getElementById("overlay").classList.add("hidden");
+      }
+  });
+  </script>
+</body>
+</html>
